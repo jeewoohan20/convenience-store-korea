@@ -346,6 +346,7 @@
     flex-direction:column;
     position:relative;
     min-height:0;
+    overflow:hidden;
   }
   .shelf-back{
     position:absolute;inset:0;
@@ -358,10 +359,11 @@
     flex:1;
     display:grid;
     gap:14px;
-    padding:14px 20px 6px;
+    padding:10px 20px 4px;
     align-items:end;
     justify-items:center;
     min-height:0;
+    overflow:hidden;
   }
   .shelf-board{
     flex:0 0 14px;
@@ -377,6 +379,7 @@
     display:flex;align-items:flex-end;justify-content:center;
     position:relative;
     transition:transform 0.15s;
+    overflow:hidden;
   }
   .product-spot:hover{transform:translateY(-6px) scale(1.05);}
   .product-spot:hover::after{
@@ -392,7 +395,10 @@
     z-index:3;
   }
   .product-spot img{
-    max-width:100%;max-height:100%;
+    max-width:110px;
+    max-height:130px;
+    width:auto;
+    height:auto;
     object-fit:contain;
     filter:drop-shadow(0 6px 8px rgba(0,0,0,0.6));
   }
@@ -404,6 +410,7 @@
     flex-direction:column;
     position:relative;
     min-height:0;
+    overflow:hidden;
   }
   .mini-shelf-back{
     position:absolute;inset:0;
@@ -420,6 +427,7 @@
     align-items:end;
     justify-items:center;
     min-height:0;
+    overflow:hidden;
   }
   .mini-shelf-board{
     flex:0 0 7px;
@@ -432,9 +440,13 @@
   .mini-product-spot{
     width:100%;height:100%;
     display:flex;align-items:flex-end;justify-content:center;
+    overflow:hidden;
   }
   .mini-product-spot img{
-    max-width:100%;max-height:100%;
+    max-width:55px;
+    max-height:65px;
+    width:auto;
+    height:auto;
     object-fit:contain;
     filter:drop-shadow(0 3px 4px rgba(0,0,0,0.6));
   }
